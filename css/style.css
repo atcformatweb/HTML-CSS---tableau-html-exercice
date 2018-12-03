@@ -1,0 +1,85 @@
+* {
+    box-sizing: border-box;
+    padding:0px;
+    margin:0px;
+}
+
+body {
+    font-family: Verdana, sans-serif;
+}
+.container{
+    max-width:400px;
+    padding:20px;
+}
+table{
+    width:100%;
+    border-collapse: collapse;
+    background-color:#eee;
+    text-align: center;
+    border-radius:3px;
+    -webkit-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.3);
+    box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.3);
+}
+th, td{
+    padding:10px;
+}
+th{
+    color: #666;
+}
+td{
+    color:#777;
+}
+.month {
+    width: 100%;
+    text-align: center;
+    font-size:28px;
+}
+.month td{
+    background: #1abc9c;
+    padding:70px 20px;
+    color:white;
+    border-top-left-radius:3px;
+    border-top-right-radius:3px;
+}
+.month .prev,
+.month .next {
+    cursor: pointer;
+}
+
+.month__current{
+    font-weight: bold;
+}
+
+.month__current__year{
+    font-size:18px;
+    font-weight: 200;
+}
+
+.month .prev {
+    float: left;
+    padding-top: 10px;
+}
+
+.month .next {
+    float: right;
+    padding-top: 10px;
+}
+
+.weekdays {
+    margin: 0;
+    padding: 10px 0;
+    background-color: #ddd;
+}
+
+.days {
+    padding: 10px 0;
+    background: #eee;
+    margin: 0;
+}
+.days .active {
+    padding: 5px;
+    background: #1abc9c;
+    color: white !important;
+    border-radius:50%;
+}
